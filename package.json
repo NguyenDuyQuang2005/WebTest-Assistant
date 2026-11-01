@@ -1,0 +1,46 @@
+{
+  "name": "webtest-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome Extension Manifest V3 hỗ trợ kiểm thử chất lượng website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "icons": "node scripts/generate-icons.mjs",
+    "fixtures": "node scripts/fixture-server.mjs"
+  },
+  "dependencies": {
+    "axe-core": "^4.14.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.55.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/chrome": "^0.0.287",
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.4.0",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.44.0",
+    "vite": "^6.4.4",
+    "vite-plugin-static-copy": "^3.1.4",
+    "vitest": "^5.0.5"
+  }
+}
